@@ -1,0 +1,322 @@
+/*--HTML FONT--*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/*--IMPORDITUD FONDID--*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/*--PEALKIRI/NIMI/LOGO/MENÜÜ--*/
+header {
+  background-image: linear-gradient(
+      112.69deg,
+      #000000 7%,
+      rgba(100, 100, 100, 0.6) 55%,
+      #000000 98%
+    ),
+    url("header-background-img.png");
+  background-size: 100% 100%;
+  color: white;
+  display: inline-block;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20%;
+  height: 100vh;
+}
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 400px;
+  grid-template-rows: 50px 300px 300px 300px;
+  width: 85%;
+  align-content: center;
+}
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+#logo {
+  font-size: 36px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  position: relative;
+  animation-name: example;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+h1 {
+  font-size: 105px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.topnav {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  margin-left: 55%;
+  margin-right: 7%;
+}
+
+.topnav a {
+  float: right;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+
+.topnav a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+main {
+  width: 1060px;
+  text-align: center;
+  margin: auto;
+}
+
+/*--WELCOME--*/
+h2 {
+  font-size: 42px;
+  color: #5b1474;
+  font-family: "Roboto", sans-serif;
+}
+
+main p {
+  color: #303030;
+  font-size: 20px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+}
+
+p:last-child::first-letter {
+  font-size: 26px;
+  color: #5b1474;
+  font-family: "Roboto", sans-serif;
+}
+
+.welcome-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+#Tekst {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: left;
+  grid-row-end: 2;
+}
+
+/*--PRICING--*/
+.pricing-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 20%;
+}
+
+.card {
+  box-shadow: 2px 2px 4px black;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+#pricing p {
+  font-size: 20px;
+}
+
+button {
+  width: 150px;
+  color: purple;
+  border: solid 2px purple;
+  font-size: 22px;
+  box-shadow: 0px 1px 4px #5b1474;
+  animation-name: button;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+/*--TESTIMONIALS--*/
+#testimonials {
+  padding: 2px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 80px;
+}
+
+.testimonials-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border: solid 1px rgb(59, 59, 59);
+  box-shadow: 2px 2px 4px black;
+  margin-top: 80px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+}
+
+.card {
+  display: inline-block;
+  border-radius: 2px;
+}
+
+h4 {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-right: 25px;
+}
+/*-- FOOTER --*/
+footer {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20%;
+}
+
+/*-- TRANSITION & ANIMATION --*/
+@keyframes example {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes button {
+  0% {
+    color: red;
+  }
+  100% {
+    color: rgb(255, 148, 9);
+  }
+}
+
+.container3 {
+  position: absolute;
+  top: 60%;
+  left: 18%;
+  margin-left: -64.5px;
+  margin-top: -85.5px;
+}
+
+.ghost {
+  animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+
+.shadowFrame {
+  width: 130px;
+  margin-top: 15px;
+}
+
+.shadow {
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+  transform-origin: center center;
+}
+
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+.bird {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 35rem;
+}
+
+.bird {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+  background-size: auto 100%;
+  width: 100%;
+  height: 500px;
+  animation-name: fly-cycle;
+  animation-duration: 1s;
+  animation-delay: -0.5s;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite;
+}
+
+.bird-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fly-cycle {
+  100% {
+    background-position: -3600px 0;
+  }
+}
